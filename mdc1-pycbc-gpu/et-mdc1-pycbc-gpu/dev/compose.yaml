@@ -1,0 +1,9 @@
+services:
+  et-mdc1-pycbc-gpu:
+    build:
+      context: .
+    image: et-mdc1-pycbc-gpu-bmk:latest
+    volumes:
+      - ..:/bmk/build/et
+    stdin_open: true
+    tty: true
